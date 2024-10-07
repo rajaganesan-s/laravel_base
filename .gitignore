@@ -1,18 +1,53 @@
+# Laravel-specific files
+/vendor
 /node_modules
-/public/build
-/public/hot
 /public/storage
 /storage/*.key
-/vendor
 .env
-.env.backup
-.env.production
 .phpunit.result.cache
-Homestead.json
 Homestead.yaml
-auth.json
-npm-debug.log
+Homestead.json
+.nitro
+
+# Log and Cache files
+/storage/logs
+/storage/framework/cache
+/storage/framework/sessions
+/storage/framework/testing
+/storage/framework/views
+
+# Composer dependencies
+/vendor/
+
+# Node modules
+/node_modules/
+
+# Environment-specific files
+.env
+.env.*.backup
+
+# Laravel Mix files
+/public/hot
+/public/mix-manifest.json
+/public/js/*.js
+/public/css/*.css
+/public/mix
+/npm-debug.log
 yarn-error.log
-/.fleet
+.pnpm-debug.log
+*.log
+
+# IDE and editor-specific files
 /.idea
 /.vscode
+/.phpstorm.meta.php
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Debugging/Testing files
+.phpunit.result.cache
+coverage/
