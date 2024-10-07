@@ -1,53 +1,42 @@
-# Laravel-specific files
+# Ignore dependencies and vendor folder
 /vendor
 /node_modules
-/public/storage
-/storage/*.key
-.env
-.phpunit.result.cache
-Homestead.yaml
-Homestead.json
-.nitro
 
-# Log and Cache files
+# Ignore environment files
+# Uncomment the next line if you need to push `.env` (not recommended in public repos)
+/*.env.*.backup
+
+# Ignore storage and cache (these can be regenerated)
+# If you need to share specific storage files, keep them and ignore only the auto-generated ones
 /storage/logs
 /storage/framework/cache
 /storage/framework/sessions
 /storage/framework/testing
 /storage/framework/views
-
-# Composer dependencies
-/vendor/
-
-# Node modules
-/node_modules/
-
-# Environment-specific files
-.env
-.env.*.backup
-
-# Laravel Mix files
 /public/hot
-/public/mix-manifest.json
-/public/js/*.js
-/public/css/*.css
-/public/mix
-/npm-debug.log
-yarn-error.log
-.pnpm-debug.log
-*.log
+/public/storage
 
-# IDE and editor-specific files
+# Laravel Mix (only compiled assets)
+/public/mix-manifest.json
+/public/css/*.css
+/public/js/*.js
+/public/mix
+
+# Ignore IDE/editor specific files (unnecessary for sharing)
 /.idea
-/.vscode
-/.phpstorm.meta.php
+.vscode
+.phpstorm.meta.php
 *.sublime-project
 *.sublime-workspace
 
-# OS-specific files
+# Ignore debugging/testing files
+/phpunit.result.cache
+coverage/
+*.log
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Ignore OS-specific files
 .DS_Store
 Thumbs.db
-
-# Debugging/Testing files
-.phpunit.result.cache
-coverage/
